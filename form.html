@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Sign Up</title>
+</head>
+<body>
+    <h1>Buat Account Baru!</h1>
+    <h4>Sign Up Form</h4>
+    <!-- membuat form sign up -->
+        <form>
+            <table>
+
+                <!-- masukkan nama -->
+                <tr>
+                    <td><label for="firstname">First Name &nbsp;:</label></td>
+                    <td colspan="2"><input type="text" id="firstname"></td>
+                </tr>
+                <tr>
+                    <td><label for="lastname">Last Name &nbsp;:</label></td>
+                    <td colspan="2"><input type="text" id="lastname"></td>
+                </tr>
+
+                <!-- tanggal lahir -->
+                <tr>
+                    <td><label for="birthday">Birthday  &nbsp;&nbsp; &nbsp;:</label></td>
+                    <td><input type="date" id="birthday" name="birthday"></td>
+                </tr>
+
+                <!-- jenis kelamin -->
+                <tr>
+                    <td>Gender &nbsp; &nbsp; &nbsp; &nbsp;:</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="male" name="gender" value="male"><label for="male">Male</label></td>
+                    <td><input type="radio" id="female" name="gender" value="female"><label for="female">Female</label></td>
+                    <td><input type="radio" id="other" name="gender" value="other"><label for="other">Other</label></td>
+                </tr>
+
+                <!-- kewarganegaraan -->
+                <tr>
+                    <td>Nationality &nbsp;:</td>
+                    <td colspan="2">
+                        <select name="nationality" id="nationality"> 
+                            <option value="japan">Japan</option>
+                            <option value="canada">Canada</option>
+                            <option value="indonesia" selected> Indonesia</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value="france">France</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <!-- Bahasa -->
+                <tr>
+                    <td>Language &nbsp; &nbsp;:</td>
+                    <td><input type="checkbox" id="indonesia"><label for="indonesia">Bahasa Indonesia</label></td>
+                </tr>
+                <tr>
+                    <td>Spoken</td>
+                    <td><input type="checkbox" id="english"><label for="english">English</label></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" id="other"><label for="other">Other</label></td>
+                </tr>
+
+                <!-- Bio -->
+                <tr>
+                    <td>Bio :</td>
+                </tr>
+                <tr>
+                    <td colspan="3"><textarea cols="30" rows="10"></textarea></td>
+                </tr>
+                <!-- submit -->
+                <tr>
+                    <td colspan="3" align="center"><button type="submit"><a href="welcome.html">Sign Up</a></button></td>
+                </tr>
+            </table>
+        </form>
+</body>
+</html>
